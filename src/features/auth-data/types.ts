@@ -1,5 +1,3 @@
-export type UserRole = "admin" | "user";
-
 export interface User {
   id: number;
   name: string;
@@ -10,8 +8,16 @@ export interface User {
 export interface AuthState {
   user: User | null;
   token: string | null;
+
+  expiresAt: number | null;
+
   isAuthenticated: boolean;
 
-  login: (user: User, token: string) => void;
+  login: (
+    user: User,
+    token: string,
+    expiresAt: number
+  ) => void;
+
   logout: () => void;
 }

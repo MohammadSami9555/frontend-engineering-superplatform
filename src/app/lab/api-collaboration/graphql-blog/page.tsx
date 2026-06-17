@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import PostCard from "@/features/api-collaboration/graphql-blog/components/PostCard";
 import { getPosts } from "@/features/api-collaboration/graphql-blog/services/graphql";
-import { Post } from "@/features/api-collaboration/graphql-blog/types";
+import type { Post } from "@/features/api-collaboration/graphql-blog/types";
 
 export default function GraphQLBlog() {
   const [posts, setPosts] = useState<Post[]>([]);
