@@ -1,9 +1,10 @@
 import StatsCard from "@/components/shared/StatsCard";
+
 export default function LabDashboardPage() {
   const totalLabs = 24;
-const completedLabs = 24;
-const progress = 100;
-const phase = "Production Ready 🚀";
+  const completedLabs = 24;
+  const progress = 100;
+  const phase = "Production Ready 🚀";
 
   return (
     <div className="space-y-10">
@@ -12,6 +13,7 @@ const phase = "Production Ready 🚀";
         <h1 className="text-5xl font-bold tracking-tight">
           Welcome to your Engineering Lab
         </h1>
+
         <p className="text-zinc-400 mt-3 text-lg">
           Build, test, and scale 24 frontend systems inside one unified
           platform.
@@ -27,44 +29,92 @@ const phase = "Production Ready 🚀";
 
       {/* Learning Roadmap */}
       <div className="rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl p-8">
-        <h2 className="text-2xl font-bold mb-6">Learning Roadmap</h2>
+        <h2 className="text-2xl font-bold mb-6">
+          Learning Roadmap
+        </h2>
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+
           <div className="rounded-2xl bg-[#4fea47]/20 border border-[#4fea47]/30 p-6">
             <p className="text-sm text-zinc-300">Completed</p>
-            <h3 className="text-xl font-bold mt-2">React Foundations</h3>
+            <h3 className="text-xl font-bold mt-2">
+              React Foundations ✅
+            </h3>
           </div>
 
-          <div className="rounded-2xl bg-blue-500/20 border border-blue-500/30 p-6">
+          <div className="rounded-2xl bg-[#4fea47]/20 border border-[#4fea47]/30 p-6">
             <p className="text-sm text-zinc-300">Completed</p>
-            <h3 className="text-xl font-bold mt-2">API & Collaboration ✅</h3>
+            <h3 className="text-xl font-bold mt-2">
+              API & Collaboration ✅
+            </h3>
           </div>
 
-          <div className="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <p className="text-sm text-zinc-400">Completed</p>
-            <h3 className="text-xl font-bold mt-2">Auth & Data ✅</h3>
+          <div className="rounded-2xl bg-[#4fea47]/20 border border-[#4fea47]/30 p-6">
+            <p className="text-sm text-zinc-300">Completed</p>
+            <h3 className="text-xl font-bold mt-2">
+              Auth & Data ✅
+            </h3>
           </div>
 
-          <div className="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <p className="text-sm text-zinc-400">Completed</p>
-            <h3 className="text-xl font-bold mt-2">Rendering Systems ✅</h3>
+          <div className="rounded-2xl bg-[#4fea47]/20 border border-[#4fea47]/30 p-6">
+            <p className="text-sm text-zinc-300">Completed</p>
+            <h3 className="text-xl font-bold mt-2">
+              Rendering Systems ✅
+            </h3>
           </div>
 
-          <div className="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <p className="text-sm text-zinc-400">Completed</p>
-            <h3 className="text-xl font-bold mt-2">Frontend Architecture ✅</h3>
+          <div className="rounded-2xl bg-[#4fea47]/20 border border-[#4fea47]/30 p-6">
+            <p className="text-sm text-zinc-300">Completed</p>
+            <h3 className="text-xl font-bold mt-2">
+              Frontend Architecture ✅
+            </h3>
           </div>
+
+          <div className="rounded-2xl bg-[#4fea47]/20 border border-[#4fea47]/30 p-6">
+            <p className="text-sm text-zinc-300">Completed</p>
+            <h3 className="text-xl font-bold mt-2">
+              Performance Engineering ✅
+            </h3>
+          </div>
+
+          <div className="rounded-2xl bg-[#4fea47]/20 border border-[#4fea47]/30 p-6">
+            <p className="text-sm text-zinc-300">Completed</p>
+            <h3 className="text-xl font-bold mt-2">
+              Security & Testing ✅
+            </h3>
+          </div>
+
+          <div className="rounded-2xl bg-[#4fea47]/20 border border-[#4fea47]/30 p-6">
+            <p className="text-sm text-zinc-300">Completed</p>
+            <h3 className="text-xl font-bold mt-2">
+              Deployment & Monitoring ✅
+            </h3>
+          </div>
+
+          <div className="rounded-2xl bg-gradient-to-r from-[#4fea47]/20 to-emerald-500/20 border border-[#4fea47]/30 p-6">
+            <p className="text-sm text-zinc-300">
+              Final Achievement
+            </p>
+
+            <h3 className="text-xl font-bold mt-2">
+              Final Capstone 🚀
+            </h3>
+          </div>
+
         </div>
       </div>
 
       {/* Overall Progress */}
       <div className="rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl p-8">
-        <h2 className="text-2xl font-bold mb-4">Overall Progress</h2>
+        <h2 className="text-2xl font-bold mb-4">
+          Overall Progress
+        </h2>
 
         <div className="flex justify-between text-sm text-zinc-400 mb-2">
           <span>
             {completedLabs} / {totalLabs} Completed
           </span>
+
           <span>{progress}%</span>
         </div>
 
@@ -76,43 +126,56 @@ const phase = "Production Ready 🚀";
         </div>
       </div>
 
-      {/* Recent Activity Timeline */}
+      {/* Recent Engineering Activity */}
       <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-zinc-950/80 to-zinc-900/80 backdrop-blur-xl p-8 shadow-2xl">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold">Recent Engineering Activity</h2>
-          <span className="text-sm text-zinc-400">Live Progress</span>
+          <h2 className="text-2xl font-bold">
+            Recent Engineering Activity
+          </h2>
+
+          <span className="text-sm text-zinc-400">
+            Live Progress
+          </span>
         </div>
 
         <div className="space-y-8 border-l border-white/10 pl-6">
+
           <div className="relative">
             <div className="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-[#4fea47]" />
+
             <h3 className="text-lg font-semibold">
-              React Foundations Completed
+              Frontend Engineering SuperPlatform Completed 🚀
             </h3>
+
             <p className="text-zinc-400 mt-1">
-              Counter, Todo, Theme Toggle, Tabs, Form Validation, Quote Generator
+              Successfully completed all 24 labs and engineering modules.
             </p>
           </div>
 
           <div className="relative">
-            <div className="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-blue-500" />
+            <div className="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-[#4fea47]" />
+
             <h3 className="text-lg font-semibold">
-              API & Collaboration Started
+              Production Deployment Completed
             </h3>
+
             <p className="text-zinc-400 mt-1">
-              REST integration, GraphQL blog frontend, shared services layer
+              Project deployed successfully on Vercel with production build.
             </p>
           </div>
 
           <div className="relative">
-            <div className="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-zinc-500" />
+            <div className="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-[#4fea47]" />
+
             <h3 className="text-lg font-semibold">
-              Auth & Data Systems Upcoming
+              Portfolio Ready
             </h3>
+
             <p className="text-zinc-400 mt-1">
-              JWT auth, React Query, SWR, Google OAuth, protected routes
+              GitHub repository, professional README, deployment and architecture finalized.
             </p>
           </div>
+
         </div>
       </div>
     </div>
