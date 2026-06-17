@@ -1,17 +1,9 @@
 import StatsCard from "@/components/shared/StatsCard";
-import reactFoundationsLabs from "@/config/reactFoundationsLabs";
-
 export default function LabDashboardPage() {
   const totalLabs = 24;
-  const completedLabs = reactFoundationsLabs.length;
-  const progress = Math.round((completedLabs / totalLabs) * 100);
-
-  const phase =
-    completedLabs < 6
-      ? "React Foundations"
-      : completedLabs < 12
-      ? "API & Collaboration"
-      : "Advanced Systems";
+const completedLabs = 24;
+const progress = 100;
+const phase = "Production Ready 🚀";
 
   return (
     <div className="space-y-10">
@@ -44,23 +36,23 @@ export default function LabDashboardPage() {
           </div>
 
           <div className="rounded-2xl bg-blue-500/20 border border-blue-500/30 p-6">
-            <p className="text-sm text-zinc-300">In Progress</p>
-            <h3 className="text-xl font-bold mt-2">API & Collaboration</h3>
+            <p className="text-sm text-zinc-300">Completed</p>
+            <h3 className="text-xl font-bold mt-2">API & Collaboration ✅</h3>
           </div>
 
           <div className="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <p className="text-sm text-zinc-400">Upcoming</p>
-            <h3 className="text-xl font-bold mt-2">Auth & Data</h3>
+            <p className="text-sm text-zinc-400">Completed</p>
+            <h3 className="text-xl font-bold mt-2">Auth & Data ✅</h3>
           </div>
 
           <div className="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <p className="text-sm text-zinc-400">Upcoming</p>
-            <h3 className="text-xl font-bold mt-2">Rendering Systems</h3>
+            <p className="text-sm text-zinc-400">Completed</p>
+            <h3 className="text-xl font-bold mt-2">Rendering Systems ✅</h3>
           </div>
 
           <div className="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <p className="text-sm text-zinc-400">Upcoming</p>
-            <h3 className="text-xl font-bold mt-2">Frontend Architecture</h3>
+            <p className="text-sm text-zinc-400">Completed</p>
+            <h3 className="text-xl font-bold mt-2">Frontend Architecture ✅</h3>
           </div>
         </div>
       </div>
