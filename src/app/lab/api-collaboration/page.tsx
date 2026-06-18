@@ -1,3 +1,20 @@
+import Link from "next/link";
+
+const labs = [
+  {
+    title: "REST API Dashboard",
+    description:
+      "Fetch, manage and visualize REST API data.",
+    href: "/lab/api-collaboration/rest-api-dashboard",
+  },
+  {
+    title: "GraphQL Blog",
+    description:
+      "Apollo Client powered GraphQL blog application.",
+    href: "/lab/api-collaboration/graphql-blog",
+  },
+];
+
 export default function ApiCollaborationPage() {
   return (
     <div className="space-y-8">
@@ -6,21 +23,27 @@ export default function ApiCollaborationPage() {
           API & Collaboration
         </h1>
 
-        <p className="text-zinc-400 mt-2">
-          REST APIs, GraphQL, WebSockets & Team Workflows
+        <p className="text-zinc-400 mt-3 text-lg">
+          REST APIs, GraphQL, WebSockets and Team Workflows
         </p>
       </div>
 
-      <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-        <h2 className="text-3xl font-bold mb-4">
-          Module Overview
-        </h2>
+      <div className="grid gap-6 md:grid-cols-2">
+        {labs.map((lab) => (
+          <Link
+            key={lab.href}
+            href={lab.href}
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all hover:border-[#4fea47]/50 hover:-translate-y-1"
+          >
+            <h2 className="text-3xl font-bold mb-3">
+              {lab.title}
+            </h2>
 
-        <p className="text-zinc-400">
-          Covers API integration, GraphQL clients,
-          real-time communication, collaboration workflows,
-          and frontend-backend interaction patterns.
-        </p>
+            <p className="text-zinc-400">
+              {lab.description}
+            </p>
+          </Link>
+        ))}
       </div>
     </div>
   );
